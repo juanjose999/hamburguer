@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguesas</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: black;
+        color: white;
+        font-family: sans-serif;
+        width: 100%;
+        height: 100%;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header .logo{
+        margin-right: 620px;
+    }
+    nav a {
+        text-decoration: none;
+        color: white;
+        margin-top: -20px;
+        margin: 30px;
+        border: solid white 2px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .portada {
+        padding-left: 60px;
+    }
+    .Nombre {
+        font-size: 4rem;
+        display: flex;
+        padding-left: 2rem;
+    }
+    .menu{
+        display: flex;
+        gap: 10rem;
+        justify-content: center;
+    }
+    .Nombre .logo-2{
+        margin-top: -190px;
+        width: 726px;
+        height: 300px;
+        margin-left: -30px;
+    }
+
+    .Foto-Hamburguesa img{
+        width: 20rem;
+        margin-left: 410px;
+    }
+    .menu article {
+        border: solid white 1px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .menu {
+        margin-top: -20px;
+    }
+    article button {
+        display: flex;
+        justify-content: center;
+        align-self: end;
+        background-color: red;
+        color: white;
+        font-weight: 600;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    article:hover {
+        cursor: pointer;
+        scale: 120%;
+    }
+    footer {
+        background-color: red;
+        color: white;
+        width: 100%;
+        height: 10rem;
+        margin-top: 2rem;
+    }
+    .footer-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    @media (max-width: 768px) {
+    header .logo img{
+        width: 10px;
+        background-color: red;
+    }
+        nav {
+        display: flex;
+        flex-direction: row;
+    }
+  .menu {
+    margin-left: 28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer {
+    width: 900px;
+    height: 100px;
+  }
+}
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/img/NAMING-01.png" alt="logo-del-negocio" width="120px">
+        </div>
+        <nav>
+            <a href="">Inicio</a>
+            <a href="">Menu</a>
+            <a href="">Domicilios</a>
+            <a href="">Sucursales</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="portada">
+            <div class="Nombre">
+                <div class="nombre-hamburguesas">
+                    <h1>Hamburguesas</h1>
+                    <picture>
+                        <img class="logo-2" src="/img/NAMING-01.png" alt="" width="600rem" height="500px">
+                    </picture>
+                </div>
+                <div class="Foto-Hamburguesa">
+                    <img src="/img/hamburger1.png" alt="Foto-hamburgusa">
+                </div>
+             </div>
+        </section>
+
+        <section class="menu">
+
+            <article>
+                <h4>Hamburguesa sencilla <br> de Carne</h4>
+                <picture>
+                    <img src="/img/hamburger-2.png" alt="Foto-hamburguesa de-pollo" width="160em">
+                </picture>
+                <div class="price">
+                    <button>$ 13.000</button>
+                </div>
+            </article>
+
+            <article>
+                <h4>Hamburguesa de Pollo</h4>
+                <picture>
+                    <img src="/img/con pollo.png" alt="" width="240em">
+                </picture>
+                <div class="price">
+                    <button>$ 16.000</button>
+                </div>
+            </article>
+
+            <article>
+                <h4>Hamburguesa con <br> Gaseosa y papas fritas</h4>
+                <picture>
+                    <img src="/img/con papas.png" alt="foto-de-hamburguesa-en-caja" width="120em">
+                </picture>
+                <div class="price">
+                    <button>$ 19.000</button>
+                </div>
+            </article>
+
+            <article>
+                <h4>Hamburguesa con <br> entrega A Domicilio</h4>
+                <picture>
+                    <img src="/img/domoicilio.png" alt="foto-de-hamburguesa-en-caja" width="180em">
+                </picture>
+                <div class="price">
+                    <button>$ 22.000</button>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <h4 class="footer-text">¡¡ Gracias por tu visita ¡¡</h4>
+    </footer>
+</body>
+</html>
